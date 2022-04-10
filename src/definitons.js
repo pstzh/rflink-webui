@@ -375,24 +375,6 @@ export const definitions = {
 			constraints_enabled_by: ["ap_enabled"],
 			order: 10,
 		},
-		ap_ip: {
-			type: "ipaddress",
-			enabled_by: ["ap_enabled"],
-			constraints_enabled_by: ["ap_enabled"],
-			order: 11,
-		},
-		ap_network: {
-			type: "ipaddress",
-			enabled_by: ["ap_enabled"],
-			constraints_enabled_by: ["ap_enabled"],
-			order: 12,
-		},
-		ap_mask: {
-			type: "ipaddress",
-			enabled_by: ["ap_enabled"],
-			constraints_enabled_by: ["ap_enabled"],
-			order: 13,
-		},
 	},
 	signal: {
 		sample_rate: {
@@ -462,104 +444,6 @@ export const definitions = {
 		async_mode_enabled: {
 			type: "bool",
 			order: 9,
-		},
-	},
-	radio: {
-		hardware: {
-			type: "string",
-			enum: {"generic":"Generic", "RFM69CW":"RFM69CW", "RFM69HCW":"RFM69HCW", "SX1276":"SX1276", "SX1278":"SX1278"},
-			order: 0,
-		},
-		rx_data: {
-			type: "int",
-			constraints: {
-				min: -1,
-			},
-			order: 1,
-		},
-		rx_vcc: {
-			type: "int",
-			constraints: {
-				min: -1,
-			},
-			order: 2,
-		},
-		rx_nmos: {
-			type: "int",
-			constraints: {
-				min: -1,
-			},
-			order: 3,
-		},
-		rx_pmos: {
-			type: "int",
-			constraints: {
-				min: -1,
-			},
-			order: 4,
-		},
-		rx_gnd: {
-			type: "int",
-			constraints: {
-				min: -1,
-			},
-			order: 5,
-		},
-		rx_na: {
-			type: "int",
-			constraints: {
-				min: -1,
-			},
-			order: 6,
-		},
-		rx_reset: {
-			type: "int",
-			constraints: {
-				min: -1,
-			},
-			order: 6,
-		},
-		rx_cs: {
-			type: "int",
-			constraints: {
-				min: -1,
-			},
-			order: 6,
-		},
-		tx_data: {
-			type: "int",
-			constraints: {
-				min: -1,
-			},
-			order: 7,
-		},
-		tx_vcc: {
-			type: "int",
-			constraints: {
-				min: -1,
-			},
-			order: 8,
-		},
-		tx_nmos: {
-			type: "int",
-			constraints: {
-				min: -1,
-			},
-			order: 9,
-		},
-		tx_pmos: {
-			type: "int",
-			constraints: {
-				min: -1,
-			},
-			order: 10,
-		},
-		tx_gnd: {
-			type: "int",
-			constraints: {
-				min: -1,
-			},
-			order: 11,
 		},
 	},
 	serial2net: {

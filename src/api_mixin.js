@@ -12,7 +12,6 @@ export const api_mixin = {
 				mqtt: {},
 				wifi: {},
 				signal: {},
-				radio: {},
 				serial2net: {},
 			},
 			status: {
@@ -36,7 +35,6 @@ export const api_mixin = {
 				mqtt: {},
 				wifi: {},
 				signal: {},
-				radio: {}
 			}
 			this.reload_config();
 			this.reload_status();
